@@ -1,0 +1,145 @@
+
+
+1.How to create a empy file 
+ touch file1
+ ls -ltr
+
+OWNER GROUP OTHERS
+
+r read(4)
+w write(2)
+x excute(1)
+
+2 . you can change the permission
+
+chmod 777 file1
+shows this rwx-rwx-rwx
+
+3.cat file1 
+ls -ltr
+shows the content of the file
+
+4.mkdir is for creating the new directonary
+ ls -ltr
+
+5.rmdir is for removing the directonary
+
+ rmdir dir1 ( it will only delete the directory which is empty)
+
+otherwise it will not
+let create a file 2 in the dir2 now when you will use rmdir dir2 it will show error that the dir2 is not empty .IN SUCH CASE WE USE RECURSIVELY (-R)
+rmdir -R dir2
+
+we can remove file also like rm file1
+ rm file1
+ ls -ltr
+
+rm filename will remove the file
+
+6.cp command : it is used to copy file and directory
+
+1---lets create a file (touch file1 )
+cp file1 file2 it will copy all the file from file1 to file2
+
+2--lets copy the file in the dir3
+cp file1 dir3
+ls -ltr
+now inside the dir3 we have file1 
+cd dir3
+ls -ltr  it will show you the file1
+
+
+3---lets copy the dir3 to dir4 it will show you error so for that ypu have to use -R
+
+cp -R dir3 dir4
+ls ltr
+cd dir4
+ls ltr
+
+
+7. MV command :- mv is used to move one directonary to another,cut and paste and used for rename the file.
+
+RENAME THE FILE LETS YOU HAVE CTREATED TOUCH FILE56 THEN YOU WILL RENAME IT 
+
+mv file56 file5
+MOVE THE FILE FROM FILE 5 TO DIR3
+
+mv file5 dir3
+ls -ltr
+
+8.vi [CREATE A FILE WITH SOME CONTENT]
+
+vi samplefile
+press i button
+write the content
+press esc button
+shift :
+wq 
+
+
+cat samplefile [TO VIEW THE CONTENT]
+
+9.head
+cd /retail_db
+ls
+cd orders
+ls
+cat part-00000
+
+head part-00000
+
+10.tail
+simiarly it is used
+
+11. cat /ordsers.* display aall  the cometnt
+
+12. history 
+history command tells you all the command you hav used yet
+
+13. wc samplefile tells you the words count in the samplefile
+
+output  :-  1  9 47 samplefile
+14 merge the files
+
+cat >orders.txt
+
+hello thie is a order file
+
+cat >customer.txt
+
+hello this is a customer file      [ ctrl+d for save and quit]
+
+cat orders.txt  customers.txt >> mergedfile.txt
+cat mergedfile.txt
+
+15.du -h [shows you the size of the directonary]
+
+du -h /data/trendytech
+
+16 grep (is for searching the data)
+
+cd~
+ls -ltr
+gep hello * [show you the result with the hello used]
+
+
+17.exit command will keep you out from the terminal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
